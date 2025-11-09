@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OSI Model — Learn & Explore</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <!-- Font Awesome for icons (optional) -->
+  <script src="https://kit.fontawesome.com/a2e0e6fbb8.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#hero">OSI Model</a>
+      <nav class="main-nav">
+        <a href="#overview">Overview</a>
+        <a href="#layers">Layers</a>
+        <a href="#learn">Learn</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="cta" href="#learn">Get Started</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <h1>OSI Model</h1>
+          <p class="lead">Understand how network communication works — from raw bits on a wire to your favourite apps. Interactive, visual, and simple.</p>
+          <div class="hero-actions">
+            <a href="#layers" class="btn btn-primary">Explore Layers</a>
+            </div>
+          <div class="trust">
+            Trusted by students &amp; learners worldwide
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <!-- compact visual: vertical layer stack with clickable circles -->
+          <div class="stack" aria-hidden="true">
+            <!-- Seven layer items (top = 7 -> Application) -->
+            <div class="stack-item" data-layer="7">
+              <button class="icon-btn" aria-label="Application layer">
+                <span class="num">7</span>
+                <i class="fa-solid fa-square-nfi"></i>
+              </button>
+              <div class="stack-title">Application</div>
+            </div>
+            <div class="stack-item" data-layer="6">
+              <button class="icon-btn"><span class="num">6</span><i class="fa-solid fa-shield"></i></button>
+              <div class="stack-title">Presentation</div>
+            </div>
+            <div class="stack-item" data-layer="5">
+              <button class="icon-btn"><span class="num">5</span><i class="fa-solid fa-link"></i></button>
+              <div class="stack-title">Session</div>
+            </div>
+            <div class="stack-item" data-layer="4">
+              <button class="icon-btn"><span class="num">4</span><i class="fa-solid fa-plug-circle-bolt"></i></button>
+              <div class="stack-title">Transport</div>
+            </div>
+            <div class="stack-item" data-layer="3">
+              <button class="icon-btn"><span class="num">3</span><i class="fa-solid fa-route"></i></button>
+              <div class="stack-title">Network</div>
+            </div>
+            <div class="stack-item" data-layer="2">
+              <button class="icon-btn"><span class="num">2</span><i class="fa-solid fa-network-wired"></i></button>
+              <div class="stack-title">Data Link</div>
+            </div>
+            <div class="stack-item" data-layer="1">
+              <button class="icon-btn"><span class="num">1</span><i class="fa-solid fa-plug"></i></button>
+              <div class="stack-title">Physical</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section id="overview" class="section">
+      <div class="wrap">
+        <h2>What is the OSI Model?</h2>
+        <p class="muted">The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes network functions into seven layers. It helps to understand where protocols and tools operate.</p>
+
+        <div class="features">
+          <article class="feature">
+            <i class="fa-solid fa-sitemap feature-icon"></i>
+            <h3>Layered clarity</h3>
+            <p>Split responsibilities — troubleshoot by layer and follow data as it moves through the stack.</p>
+          </article>
+
+          <article class="feature">
+            <i class="fa-solid fa-route feature-icon"></i>
+            <h3>Routing & addressing</h3>
+            <p>Learn where IP addressing & routing fit in and how packets find their path.</p>
+          </article>
+
+          <article class="feature">
+            <i class="fa-solid fa-lock feature-icon"></i>
+            <h3>Security & translation</h3>
+            <p>Understand where encryption, compression and format translation happen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAYERS DETAIL -->
+    <section id="layers" class="section alt">
+      <div class="wrap">
+        <h2>The 7 Layers</h2>
+
+        <div class="cards-grid">
+          <!-- Each card will expand when its header/button is clicked (icon rotates) -->
+          <div class="layer-card" data-id="7">
+            <div class="card-head">
+              <button class="circle toggle-btn"><span>7</span></button>
+              <div class="card-title">Application</div>
+            </div>
+            <div class="card-body">
+              <p>Interfaces for end-user applications — HTTP, FTP, SMTP, DNS. This is where application services live.</p>
+            </div>
+          </div>
+
+          <div class="layer-card" data-id="6">
+            <div class="card-head">
+              <button class="circle toggle-btn"><span>6</span></button>
+              <div class="card-title">Presentation</div>
+            </div>
+            <div class="card-body">
+              <p>Transforms and encrypts data; handles format translation and compression.</p>
+            </div>
+          </div>
+
+          <div class="layer-card" data-id="5">
+            <div class="card-head">
+              <button class="circle toggle-btn"><span>5</span></button>
+              <div class="card-title">Session</div>
+            </div>
+            <div class="card-body">
+              <p>Manages dialogs (sessions) and synchronization between applications.</p>
+            </div>
+          </div>
+
+          <div class="layer-card" data-id="4">
+            <div class="card-head">
+              <button class="circle toggle-btn"><span>4</span></button>
+              <div class="card-title">Transport</div>
+            </div>
+            <div class="card-body">
+              <p>End-to-end communication: segmentation, flow control, reliability (TCP/UDP).</p>
+            </div>
+          </div>
+
+          <div class="layer-card" data-id="3">
+            <div class="card-head">
+              <button class="circle toggle-btn"><span>3</span></button>
+              <div class="card-title">Network</div>
+            </div>
+            <div class="card-body">
+              <p>Routing, IP addressing and packet forwarding across networks.</p>
+            </div>
+          </div>
+
+          <div class="layer-card" data-id="2">
+            <div class="card-head">
+              <button class="circle toggle-btn"><span>2</span></button>
+              <div class="card-title">Data Link</div>
+            </div>
+            <div class="card-body">
+              <p>MAC addressing, frame formatting, and error detection on local links.</p>
+            </div>
+          </div>
+
+          <div class="layer-card" data-id="1">
+            <div class="card-head">
+              <button class="circle toggle-btn"><span>1</span></button>
+              <div class="card-title">Physical</div>
+            </div>
+            <div class="card-body">
+              <p>Physical media, electrical/optical signals, connectors and raw bit transmission.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARN / CTA -->
+    <section id="learn" class="section">
+      <div class="wrap cta-panel">
+        <h2>Ready to practice?</h2>
+        <p>Try the quick interactive exercises and a short quiz to lock the concepts in.</p>
+        <div class="hero-actions">
+          <a href="#layers" class="btn btn-primary">Start Exercises</a>
+          <a href="#contact" class="btn btn-outline">Ask a Question</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMPLE CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="wrap">
+        <h2>Contact / Feedback</h2>
+        <p class="muted">Questions, corrections or suggestions? Send a quick message.</p>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — message sent (demo)')">
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Message" rows="4" required></textarea>
+          <div class="form-row">
+            <button class="btn btn-primary" type="submit">Send</button>
+            <button class="btn btn-ghost" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-left">© 2025 OSI Model — Learn & Explore</div>
+      </div>
+  </footer>
+</body>
+</html>
